@@ -1,12 +1,10 @@
 import re
 import serial
 from http.server import HTTPServer, BaseHTTPRequestHandler
-
-import threading
-c = threading.Condition()
-
 from time import sleep
+import threading
 
+c = threading.Condition()
 
 tempc = "DEFAULT TEMP C"
 tempf = "DEFAULT TEMP F"
@@ -15,12 +13,7 @@ humid = "DEFAULT HUMID"
 
 def parse(data):
 
-
-    # tempc = float(data[5:9])
-    # humid = float(data[15:])
-    # tempf = (tempc * 1.8) + 32  # calculate fahrenheit
-
-    # regex matching
+    # regex matching only the numbers in the data
     match = re.search(r'T = ([0-9.]+), H = ([0-9.]+)', data)
 
     tempc = float(match.group(1))
