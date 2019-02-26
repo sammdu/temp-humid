@@ -15,7 +15,8 @@ The user has the choice between `Fahrenheit` AND `Celsius` temperature.
    
 ## Project Structure
 
+`ArduinoCode`: Code to program an Arduino UNO (or any equivalent device; might need adjustment for different models), assuming the **Serial** and **LiquidCrystal** libraries are installed. Will communicate both through a **2x16** LCD display as well as serial-via-usb   
 `TempHumidClient`: Static Web Interface (Needs to be served by an HTTP server)   
-`TempHumidServerCode`: Backend that handles serial communication and responds to GET requests from client browser.   
+`TempHumidServerCode`: Backend that handles serial communication and responds to GET requests from client browser   
 
 Server can easily by set up on a Raspberry Pi, then the cost and portability/footprint will be dramatically decreased. Currently, though, the Arduino is configured to run with the laptop.
