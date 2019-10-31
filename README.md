@@ -1,5 +1,5 @@
 
-# Temperature & Humidity Report Device (Thermostat)
+# Temperature & Humidity Monitor System (Thermostat)
 
 
 ### Feeling cold? Or perhaps want to monitor temperature and humidity of a greenhouse / lab environment? Our solution powers you from the smallest of comfort to the most professional of settings.
